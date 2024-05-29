@@ -12,7 +12,15 @@
     <div class="container">
         <div class="login-container">
             <div class="login-container-part-1">
-                <div class="animation-container"></div>
+                <div class="animation-container">
+                    <svg id="avatar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                        <circle id="left-eye" cx="30" cy="35" r="5" fill="black"/>
+                        <circle id="right-eye" cx="70" cy="35" r="5" fill="black"/>
+                        <path id="mouth" d="M 30 70 Q 50 90 70 70" fill="none" stroke="black"/>
+                        <path id="left-eye-brow" d="M 20 30 Q 30 20 40 30" fill="none" stroke="black"/>
+                        <path id="right-eye-brow" d="M 60 30 Q 70 20 80 30" fill="none" stroke="black"/>
+                    </svg>
+                </div>
             </div>
             <div class="login-container-part-2">
                 <div class="input-field" id="input-1">
@@ -32,6 +40,7 @@
         </div>
     </div>
     <script src="/JS/data.js"></script>
+    <script src="./JS/animation.js"></script>
     <script src="/JS/script.js"></script>
 </body>
 </html>
