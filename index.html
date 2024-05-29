@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fun Login Page</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <div class="login-container-part-1">
+                <div class="animation-container"></div>
+            </div>
+            <div class="login-container-part-2">
+                <div class="input-field" id="input-1">
+                    <input type="text" class="input" id="username" placeholder="USERNAME">
+                </div>
+                <div class="input-field" id="input-2">
+                    <input type="password" class="input" id="password" placeholder="PASSWORD" onclick="toggleAnimation(1)">
+                </div>
+                <div class="input-field" id="input-3">
+                    <div class="toggle-container"><input type="checkbox" id="toggle-switch" onclick="toggleFunction()"><span id="toggle-text">SHOW PASSWORD</span></div>
+                </div>
+            </div>
+            <div class="login-container-part-3">
+                <div class="buttons" id="button-1" onclick="loginFunction()"><span>LOGIN</span></div>
+                <div class="buttons" id="button-2" onclick="clearInputs()"><span>CLEAR</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="/JS/data.js"></script>
+    <script src="/JS/script.js"></script>
+</body>
+</html>

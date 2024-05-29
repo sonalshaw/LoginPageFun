@@ -1,0 +1,120 @@
+body {
+    background-color: black;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    /*border: 2px solid red;*/
+    height: 98vh;
+    /*aspect-ratio: 1/2;*/
+    display: flex;
+}
+
+.login-container {
+    border: 3px solid azure;
+    height: 409px;
+    width: 304px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: darkblue;
+    box-shadow: 10px 10px 10px 0px purple;
+}
+
+.login-container-part-1 {
+    /*border: 2px solid red;*/
+    height: 40%;
+    display: flex;
+}
+
+.animation-container {
+    border: 3px solid black;
+    margin: auto;
+    height: 90%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-color: lightblue;
+    cursor: none;
+}
+
+.login-container-part-2 {
+    /*border: 2px solid red;*/
+    height: 30%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    /*border: 2px solid red;*/
+    margin: auto;
+    height: 25%;
+    width: 80%;
+    display: flex;
+}
+
+.input {
+    height: 50%;
+    width: 80%;
+}
+
+.input-field input {
+    margin: auto;
+    font-family: Bahnschrift;
+}
+
+.toggle-container {
+    /*border: 3px solid red;*/
+    height: 60%;
+    width: 70%;
+    margin: auto;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+#toggle-switch {
+    cursor: pointer;
+}
+
+.login-container-part-3 {
+    /*border: 2px solid red;*/
+    height: 12%;
+    display: flex;
+}
+
+.buttons {
+    border: 3px solid cyan;
+    margin: auto;
+    height: 60%;
+    width: 35%;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.buttons span {
+    /*border: 2px solid white;*/
+    margin: auto;
+    font-family: cursive;
+}
+
+.buttons:hover {
+    cursor: pointer;
+    color: black;
+    background-color: cyan;
+    border-color: #989898;
+    font-weight: bolder;
+}
+
+.buttons:active {
+    cursor: progress;
+    color: red;
+    background-color: black;
+    border-color: lightblue;
+    user-select: none;
+}
