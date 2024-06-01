@@ -23,11 +23,12 @@ toggle_text_info.addEventListener("click", () => {
 const toggleAnimation = (trigger_value) => {
     // 1 - click on password field
     // 2 - password checking
+    // 3 - toggle shaw password
     if (trigger_value == 1) {
         if (toggle_switch_info.checked)
-            console.log(`Open Eye`);
+            openEyeL();
         else
-            console.log(`Close Eye`);
+            closeEye();
     } else if (trigger_value == 2) {
         let wrong_password = checkPassword(username_info.value, password_info.value);
         if (wrong_password)
@@ -57,6 +58,7 @@ const clearInputs = () => {
     password_info.value = "";
     toggle_switch_info.checked = false;
     toggle_text_info.innerHTML = SHOW_PASSWORD;
+    resetFace();
 }
 
 const loginFunction = () => {

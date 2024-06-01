@@ -12,7 +12,7 @@ const startBlinking = (delay) => {
         delay = 1;
     }
     blinking = TweenMax.to([eyeL, eyeR], .1, {
-        delay: delay, scaleY: 0, yoyo: true, repeat: 1, transformOrigin: "center center", onComplete: function () {
+        delay: delay, scaleY: 0.05, yoyo: true, repeat: 1, transformOrigin: "center center", onComplete: function () {
             startBlinking(8);
         }
     });
@@ -24,16 +24,24 @@ const getRandomInt = (max) => {
 
 const closeEye = () => {
     TweenMax.killTweensOf([eyeL, eyeR]);
-    TweenMax.to([eyeL, eyeR], .1, {scaleY: 0.1});
+    TweenMax.to([eyeL, eyeR], .1, {scaleY: 0.05, yoyo: true, transformOrigin: "center center"});
 }
 
 const openEyeL = () => {
-    TweenMax.killTweensOf(eyeL);
-    TweenMax.to(eyeL, .1, {scaleY: 0.7});
+    TweenMax.killTweensOf(eyeR);
+    TweenMax.to(eyeL, .1, {scaleY: 0.7, yoyo: true, transformOrigin: "center center"});
+    TweenMax.to(eyeR, .1, {scaleY: 0.05, yoyo: true, transformOrigin: "center center"});
 }
 
-const initAnimation = () => {
+const resetFace = () => {
+
+    try {
+        blinking.kill();
+    } catch (e) {console.log('Handled blinking');}
+
+    TweenMax.to([eyeL, eyeR], .1, {scaleY: 1, yoyo: true, transformOrigin: "center center"});
     startBlinking(5);
 }
 
-initAnimation();
+
+resetFace();
