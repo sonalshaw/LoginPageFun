@@ -4,7 +4,7 @@ let data = [
         'password': 'mypassword',
     },{
         'username': 'amitchinara',
-        'password': 'friendpassword',
+        'password': 'friendcode',
     }
 ]
 
